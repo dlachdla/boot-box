@@ -15,6 +15,10 @@ ARG PROD_REDIS_PASSWORD
 ARG IMP_CODE
 ARG IMP_API_KEY
 ARG IMP_API_SECRETKEY
+ARG api_kmdb_key
+ARG api_kobis_key
+ARG api_tmdb_key
+ARG api_youtube_key
 # root 디렉토리에 app.jar복사
 COPY ${JAR_FILE_PATH} app.jar
 # 지갑 파일을 루트하위에 복사
@@ -29,5 +33,9 @@ ENV PROD_REDIS_PASSWORD=${PROD_REDIS_PASSWORD}
 ENV IMP_CODE=${IMP_CODE}
 ENV IMP_API_KEY=${IMP_API_KEY}
 ENV IMP_API_SECRETKEY=${IMP_API_SECRETKEY}
+ENV API_KMDB_KEY=${api_kmdb_key}
+ENV API_KOBIS_KEY=${api_kobis_key}
+ENV API_TMDB_KEY=${api_tmdb_key}
+ENV API_YOUTUBE_KEY=${api_youtube_key}
 # 컨테이너 실행 시 app.jar 자동 실행 (프로필 설정)
 ENTRYPOINT ["java", "-jar", "/app.jar"]

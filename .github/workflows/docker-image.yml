@@ -41,10 +41,10 @@ jobs:
           --build-arg IMP_CODE="${{ secrets.IMP_CODE }}" \
           --build-arg IMP_API_KEY="${{ secrets.IMP_API_KEY }}" \
           --build-arg IMP_API_SECRETKEY="${{ secrets.IMP_API_SECRETKEY }}" \
-          --build-arg API_KMDB_KEY="${{ secrets.API_KMDB_KEY }}" \
-          --build-arg API_KOBIS_KEY="${{ secrets.API_KOBIS_KEY }}" \
-          --build-arg API_TMDB_KEY="${{ secrets.API_TMDB_KEY }}" \
-          --build-arg API_YOUTUBE_KEY="${{ secrets.API_YOUTUBE_KEY }}" \
+          --build-arg api_kmdb_key="${{ secrets.API_KMDB_KEY }}" \
+          --build-arg api_kobis_key="${{ secrets.API_KOBIS_KEY }}" \
+          --build-arg api_tmdb_key="${{ secrets.API_TMDB_KEY }}" \
+          --build-arg api_youtube_key="${{ secrets.API_YOUTUBE_KEY }}" \
           -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.APP_NAME }} .
 
     - name: Docker Hub Login

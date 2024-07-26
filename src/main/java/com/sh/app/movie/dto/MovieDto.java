@@ -1,4 +1,4 @@
-package com.sh.app.movie.controller;
+package com.sh.app.movie.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

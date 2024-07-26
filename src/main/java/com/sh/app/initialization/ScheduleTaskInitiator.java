@@ -2,6 +2,7 @@ package com.sh.app.initialization;
 
 import com.sh.app.movie.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.scheduling.TaskScheduler;
@@ -15,6 +16,7 @@ public class ScheduleTaskInitiator implements ApplicationListener<ApplicationRea
     private MovieService movieService;
 
     @Autowired
+    @Qualifier("taskScheduler")
     private TaskScheduler taskScheduler;
 
     @Override

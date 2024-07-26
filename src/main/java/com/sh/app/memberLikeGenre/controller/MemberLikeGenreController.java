@@ -1,12 +1,9 @@
 package com.sh.app.memberLikeGenre.controller;
 
-import com.sh.app.genre.entity.Genre;
-import com.sh.app.genre.serviece.GenreServiece;
 import com.sh.app.memberLikeGenre.dto.MemberLikeGenreListDto;
 import com.sh.app.memberLikeGenre.dto.MemberLikeGenreResponseDto;
-import com.sh.app.memberLikeGenre.entity.MemberLikeGenre;
 import com.sh.app.memberLikeGenre.serviece.MemberLikeGenreServiece;
-import com.sh.app.movie.controller.MovieDto;
+import com.sh.app.movie.dto.MovieDto;
 import com.sh.app.movie.entity.Movie;
 import com.sh.app.movie.service.MovieService;
 import lombok.extern.slf4j.Slf4j;
@@ -18,9 +15,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 @Controller
