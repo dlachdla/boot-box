@@ -49,7 +49,7 @@ public class AnswerService {
 
     public void createAnswer(AnswerCreateDto answerCreateDto) {
         Answer answer = answerRepository.save(convertToAnswerCreateDto(answerCreateDto));
-        log.debug("answer = {}", answer);
+//        log.debug("answer = {}", answer);
     }
 
     private Answer convertToAnswerCreateDto(AnswerCreateDto answerCreateDto) {

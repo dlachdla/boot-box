@@ -38,7 +38,15 @@ $(document).ready(function() {
                 ratingClass = 'grade bg-gradient-to-r bg-yellow-100 text-yellow-800 text-l font-bold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-yellow-300 border border-yellow-300';
                 ratingText = '12';
                 break;
+            case '12세이상관람가':
+                ratingClass = 'grade bg-gradient-to-r bg-yellow-100 text-yellow-800 text-l font-bold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-yellow-300 border border-yellow-300';
+                ratingText = '12';
+                break;
             case '15세관람가':
+                ratingClass = 'grade bg-gradient-to-r bg-purple-100 text-purple-800 text-l font-bold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400';
+                ratingText = '15';
+                break;
+            case '15세이상관람가':
                 ratingClass = 'grade bg-gradient-to-r bg-purple-100 text-purple-800 text-l font-bold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400';
                 ratingText = '15';
                 break;
@@ -48,6 +56,10 @@ $(document).ready(function() {
                 ratingText = '15';
                 break;
             case '18세관람가(청소년관람불가)':
+                ratingClass = 'grade bg-gradient-to-r bg-red-100 text-red-800 text-l font-bold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400';
+                ratingText = '18+';
+                break;
+            case '청소년관람불가':
                 ratingClass = 'grade bg-gradient-to-r bg-red-100 text-red-800 text-l font-bold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400';
                 ratingText = '18+';
                 break;

@@ -38,7 +38,7 @@
                         <span style="font-size: 0.4em; width:45px; justify-content: center; align-items:center; display:flex; "
                               class="grade bg-gradient-to-r bg-green-100 text-green-800 text-m font-bold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">ALL</span>
                     </th:block>
-                    <th:block th:if="|${movie.filmRatings == '12세관람가'}|">
+                    <th:block th:if="|${movie.filmRatings == '12세관람가' or movie.filmRatings == '12세이상관람가'}|">
                         <span style="font-size: 0.4em; width:45px; justify-content: center; align-items:center; display:flex; "
                               class="grade bg-gradient-to-r bg-yellow-100 text-yellow-800 text-l font-bold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-yellow-300 border border-yellow-300">12</span>
                     </th:block>
@@ -47,11 +47,11 @@
                         <span style="font-size: 0.4em; width:45px; justify-content: center; align-items:center; display:flex; "
                               class="grade bg-gradient-to-r bg-purple-100 text-purple-800 text-l font-bold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400">15</span>
                     </th:block>
-                    <th:block th:if="|${movie.filmRatings == '15세관람가'}|">
+                    <th:block th:if="|${movie.filmRatings == '15세관람가' or movie.filmRatings == '15세이상관람가'}|">
                         <span style="font-size: 0.4em; width:45px; justify-content: center; align-items:center; display:flex; "
                               class="grade bg-gradient-to-r bg-purple-100 text-purple-800 text-l font-bold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400">15</span>
                     </th:block>
-                    <th:block th:if="|${movie.filmRatings == '18세관람가(청소년관람불가)'}|">
+                    <th:block th:if="|${movie.filmRatings == '18세관람가(청소년관람불가)' or movie.filmRatings == '청소년관람불가'}|">
                         <span style="font-size: 0.4em; width:45px; justify-content: center; align-items:center; display:flex; "
                               class="grade bg-gradient-to-r bg-red-100 text-red-800 text-l font-bold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400">18</span>
                     </th:block>
